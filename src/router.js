@@ -1,6 +1,7 @@
 import React from 'react';
-import {Router, Stack, Scene} from 'react-native-router-flux';
+import { Router, Stack, Scene } from 'react-native-router-flux';
 import Home from './page/Home';
+import Menu from './page/Menu';
 import PageCarousel from './page/PageCarousel';
 
 const RouterProvider = () => {
@@ -8,6 +9,7 @@ const RouterProvider = () => {
     <Router>
       <Stack key="root">
         <Scene key="home" component={Home} title="Home" hideNavBar />
+        <Scene key="menu" component={Menu} title="Menu" hideNavBar />
         <Scene
           key="pageCarousel"
           component={PageCarousel}
