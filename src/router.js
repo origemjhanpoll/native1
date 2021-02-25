@@ -8,8 +8,8 @@ const RouterProvider = () => {
   return (
     <Router>
       <Stack key="root">
-        <Scene key="home" component={Home} title="Home" hideNavBar />
         <Scene key="menu" component={Menu} title="Menu" hideNavBar />
+        <Scene key="home" component={Home} title="Home" hideNavBar />
         <Scene
           key="pageCarousel"
           component={PageCarousel}
